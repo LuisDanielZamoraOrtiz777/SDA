@@ -1,0 +1,22 @@
+@model VulnerableApp.Models.User
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Panel</title>
+</head>
+<body>
+    <h2>Panel</h2>
+
+    <p>Usuario: @Model.Username</p>
+    <p>Email: @Model.Email</p>
+    <p>Balance: @Model.Balance</p>
+
+    <form method="post" action="/Auth/Logout">
+        <button type="submit">Cerrar sesión</button>
+    </form>
+</body>
+</html>
